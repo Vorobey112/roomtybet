@@ -2,6 +2,10 @@ body{
     font-family: "Nunito Sans", sans-serif;
 }
 
+:root{
+    --semi-transparent-white: rgba(255, 255, 255, 0.2)
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -15,7 +19,7 @@ body{
 }
 
 main{
-    background-image: url(/images/bg.png);
+    background-image: url(./images/bg.png);
     background-size: cover;
 
 }
@@ -27,70 +31,6 @@ header{
 
 
 }
-
-/* .burger-lable{
-    display: none;
-} */
-
-@media (max-width: 900px) {
-    .header-menu-q{
-        display: none;
-    }
-}
-
-/* @media (max-width: 880px){
-    .burger-lable{
-        position: relative;
-        display: block;
-        width: 30px;
-        height: 25px;
-    }
-
-}
-
-.burger-lable::after, .burger-lable::before, .burger-lable span{
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    transition: .3s;
-}
-
-.burger-lable::before{
-    content: "";
-    top: 0;
-}
-
-.burger-lable::after{
-    content: "";
-    bottom: 0;
-}
-
-.burger-lable span{
-    top: 11px;
-}
-
-#burger-toggle:checked ~ .burger-lable::after{
-    transform: rotate(45deg);
-    bottom: 10px;
-}
-
-#burger-toggle:checked ~ .burger-lable::before{
-    transform: rotate(-45deg);
-    top: 12px;
-}
-
-#burger-toggle:checked ~ .burger-lable span{
-    transform: rotate(-45deg);
-    top: 12px;
-}
-
-#burger-toggle{
-    display: none;
-} */
-
-
-
 
 .header-menu{
     display: flex;
@@ -153,7 +93,7 @@ header{
 
 .info-form{
     margin-top: 50px;
-    background-color: rgb(255, 255, 255, 20%);
+    background-color: var(--semi-transparent-white);
     padding: 40px;
     border-radius: 10px;
     display: flex;
@@ -173,7 +113,7 @@ form{
 
 .info-select{
     width: 100%;
-    background-color: rgb(255, 255, 255, 20%);
+    background-color: var(--semi-transparent-white);
     padding: 14px 45px 14px 14px;
     border: #FDFDFD 1px solid;
     border-radius: 5px;
@@ -206,7 +146,7 @@ form{
 
 .info-input{
     width: 100%;
-    background-color: rgb(255, 255, 255, 20%);
+    background-color:var(--semi-transparent-white);
     padding: 14px 45px 14px 14px;
     border: #FDFDFD 1px solid;
     border-radius: 5px;
@@ -615,7 +555,7 @@ form{
     .popular-card-text{
         transform: translateY(80%);
         transition: 3s all ease;
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: var(--semi-transparent-white);
         backdrop-filter: blur(10px);
         display: flex;
         flex-direction: column;
